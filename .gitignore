@@ -1,0 +1,7 @@
+# Carpetas de desarrollo locales
+git-portable/
+.agents/
+
+# Scripts temporales de configuración
+install_git_portable.ps1
+update_mcp.ps1

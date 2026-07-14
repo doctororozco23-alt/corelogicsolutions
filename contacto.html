@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y Cotización | Core Logic Solutions</title>
+  <meta name="description" content="Contacta con Core Logic Solutions y configura tu presupuesto a medida utilizando nuestro estimador de coste y tiempo automatizado.">
+  
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Orbes de luz de fondo neo-futurista -->
+  <div class="bg-glow-orb orb-cyan"></div>
+  <div class="bg-glow-orb orb-purple"></div>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="logo-link">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6 12H6L12 6z"/></svg>
+        </div>
+        <span>Core Logic <span class="gradient-text">Solutions</span></span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li class="nav-item"><a href="contacto.html" class="nav-link active">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Banner / Hero de la Página -->
+  <section class="section" style="padding-top: 10rem; text-align: center; max-width: 800px; margin: 0 auto;">
+    <div class="hero-badge reveal">Contacto e Inversión</div>
+    <h1 style="font-size: 3rem; margin-bottom: 1.5rem;" class="reveal">Inicia tu <span class="gradient-text">Transformación</span></h1>
+    <p style="color: var(--text-muted); font-size: 1.15rem;" class="reveal">Selecciona las soluciones que requiere tu empresa y obtén una cotización estimada al instante antes de enviar tu mensaje.</p>
+  </section>
+
+  <!-- Seccion Configuradora de Presupuestos -->
+  <section class="section" id="configurator-section" style="padding-top: 1rem;">
+    <div class="section-title reveal">
+      <h2>Configurador de <span class="gradient-text">Presupuesto</span></h2>
+      <p>Selecciona uno o más servicios para armar tu plan a medida. Las tarifas y tiempos se calculan dinámicamente.</p>
+    </div>
+
+    <div class="config-grid reveal">
+      <!-- Grid de Checkboxes de Servicio -->
+      <div class="checkbox-grid">
+        
+        <!-- Checkbox 1 -->
+        <label class="checkbox-card" id="card-service-auto">
+          <input type="checkbox" class="service-checkbox" data-price="300" data-time="2" data-name="Automatización de Trabajo con IA" checked>
+          <span class="custom-checkbox"></span>
+          <div class="checkbox-info">
+            <h4>Automatización de Trabajo con IA</h4>
+            <p>Modelado de flujos en n8n/Zapier e integración de APIs de LLMs en tus workflows cotidianos.</p>
+          </div>
+          <div class="checkbox-meta">
+            <span class="meta-price">$300</span>
+            <div class="meta-time">~2 semanas</div>
+          </div>
+        </label>
+
+        <!-- Checkbox 2 -->
+        <label class="checkbox-card" id="card-service-marketing">
+          <input type="checkbox" class="service-checkbox" data-price="200" data-time="3" data-name="Marketing Digital & SEO IA">
+          <span class="custom-checkbox"></span>
+          <div class="checkbox-info">
+            <h4>Marketing Digital & SEO IA</h4>
+            <p>Campañas automatizadas, prospección de clientes y redacción semántica avanzada mediante IA.</p>
+          </div>
+          <div class="checkbox-meta">
+            <span class="meta-price">$200</span>
+            <div class="meta-time">~3 semanas</div>
+          </div>
+        </label>
+
+        <!-- Dropdown 1: Auditoría de Negocios -->
+        <div class="checkbox-card" style="cursor: default; display: block;" id="card-service-audit-business">
+          <div class="checkbox-info">
+            <h4 style="margin-bottom: 0.25rem;">Auditoría de Negocios (Interna)</h4>
+            <p>Análisis de eficiencia operativa y mapeo de flujos manuales elegibles para agentes IA.</p>
+            <select class="service-select form-control" style="margin-top: 0.75rem; background: var(--bg-dark); border-color: var(--border-glass);" data-name="Auditoría de Negocios">
+              <option value="0" data-price="0" data-time="0">Ninguno</option>
+              <option value="basic" data-price="50" data-time="1">Plan Básico - $50 (~1 semana)</option>
+              <option value="intermediate" data-price="100" data-time="2">Plan Intermedio - $100 (~2 semanas)</option>
+              <option value="advanced" data-price="200" data-time="3">Plan Avanzado - $200 (~3 semanas)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dropdown 2: Auditoría de Competidores -->
+        <div class="checkbox-card" style="cursor: default; display: block;" id="card-service-audit-competitor">
+          <div class="checkbox-info">
+            <h4 style="margin-bottom: 0.25rem;">Auditoría de Competencia de Mercado</h4>
+            <p>Escaneo automatizado de precios, SEO y embudos de ventas de tu competencia por IA.</p>
+            <select class="service-select form-control" style="margin-top: 0.75rem; background: var(--bg-dark); border-color: var(--border-glass);" data-name="Auditoría de Competidores">
+              <option value="0" data-price="0" data-time="0">Ninguno</option>
+              <option value="basic" data-price="75" data-time="1">Plan Básico - $75 (~1 semana)</option>
+              <option value="intermediate" data-price="150" data-time="2">Plan Intermedio - $150 (~2 semanas)</option>
+              <option value="advanced" data-price="300" data-time="3">Plan Avanzado - $300 (~3 semanas)</option>
+            </select>
+          </div>
+        </div>
+
+
+        <!-- Checkbox 5 -->
+        <label class="checkbox-card" id="card-service-web">
+          <input type="checkbox" class="service-checkbox" data-price="400" data-time="4" data-name="Creación de Página Web Premium">
+          <span class="custom-checkbox"></span>
+          <div class="checkbox-info">
+            <h4>Páginas Web Corporativas</h4>
+            <p>Desarrollo nativo (HTML/CSS/JS) ultra rápido y responsive con animaciones premium.</p>
+          </div>
+          <div class="checkbox-meta">
+            <span class="meta-price">$400</span>
+            <div class="meta-time">~4 semanas</div>
+          </div>
+        </label>
+
+        <!-- Checkbox 6 -->
+        <label class="checkbox-card" id="card-service-mobile">
+          <input type="checkbox" class="service-checkbox" data-price="1000" data-time="6" data-name="Creación de Aplicaciones Móviles">
+          <span class="custom-checkbox"></span>
+          <div class="checkbox-info">
+            <h4>Aplicaciones Móviles (iOS/Android)</h4>
+            <p>Construcción de aplicaciones móviles a medida con integraciones de bases de datos e IA.</p>
+          </div>
+          <div class="checkbox-meta">
+            <span class="meta-price">$1,000</span>
+            <div class="meta-time">~6 semanas</div>
+          </div>
+        </label>
+
+
+
+      </div>
+
+      <!-- Panel del Presupuesto Estimado -->
+      <div class="glass-card estimate-panel" id="estimate-output-box">
+        <h3>Tu Proyecto</h3>
+        
+        <div class="est-row">
+          <span class="est-label">Inversión Estimada:</span>
+          <span class="est-val price" id="config-total-price">$0</span>
+        </div>
+
+        <div class="est-row">
+          <span class="est-label">Tiempo de Entrega:</span>
+          <span class="est-val" id="config-total-time">0 semanas</span>
+        </div>
+
+        <p class="est-disclaimer">* Los plazos asumen ejecuciones en paralelo y una semana adicional de acoplamiento e integración por cada servicio extra seleccionado.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Formulario de Contacto Principal -->
+  <section class="section" id="contact-form-section" style="background: var(--bg-deep); padding-bottom: 8rem;">
+    <div class="contact-grid">
+      <!-- Datos de contacto directos -->
+      <div class="contact-info-card reveal">
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">¿Prefieres hablar <span class="gradient-text">Directamente</span>?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6;">Si tienes un requerimiento muy específico o necesitas un acuerdo de confidencialidad (NDA) antes de detallar tus flujos operacionales, contáctanos:</p>
+        
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-details">
+            <h4>Email Corporativo</h4>
+            <p>contacto@corelogicsolutions.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-details">
+            <h4>Canal de Slack / Teams</h4>
+            <p>Disponible tras primera llamada de onboarding</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-details">
+            <h4>Operación Global</h4>
+            <p>Equipo 100% distribuido y virtual</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de Captura -->
+      <div class="glass-card reveal" style="border-color: var(--border-neon);">
+        <form id="lead-contact-form" onsubmit="event.preventDefault(); alert('¡Gracias! Hemos recibido tu configuración de servicios y mensaje. Nos pondremos en contacto contigo en las próximas 12 horas.'); this.reset(); document.querySelectorAll('.service-checkbox').forEach((c, i) => c.checked = i === 0); window.location.reload();">
+          <div class="form-group">
+            <label for="contact-name">Nombre Completo</label>
+            <input type="text" id="contact-name" class="form-control" placeholder="Ej. Juan Pérez" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Correo Corporativo</label>
+            <input type="email" id="contact-email" class="form-control" placeholder="Ej. juan@tuempresa.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-company">Nombre de la Empresa</label>
+            <input type="text" id="contact-company" class="form-control" placeholder="Ej. Tech Logistics S.A." required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Detalles del Proyecto y Configuración</label>
+            <!-- Este textarea será rellenado automáticamente por el configurador JS -->
+            <textarea id="contact-message" class="form-control" placeholder="Describe brevemente tus cuellos de botella actuales..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; border-radius: 10px; margin-top: 1rem;">Solicitar Propuesta de Proyecto</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="footer-section">
+    <div class="footer-grid">
+      <div class="footer-info">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6 12H6L12 6z"/></svg>
+          </div>
+          <span>Core Logic <span class="gradient-text">Solutions</span></span>
+        </a>
+        <p>Llevamos tu empresa al siguiente nivel operacional integrando Inteligencia Artificial avanzada, automatización de tareas y desarrollo de software a medida.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          <a href="#" class="social-icon" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-title">Enlaces</h3>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Inicio</a></li>
+          <li><a href="servicios.html" class="footer-link">Servicios</a></li>
+          <li><a href="nosotros.html" class="footer-link">Nosotros</a></li>
+          <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-title">Servicios</h3>
+        <ul class="footer-links">
+          <li><a href="servicios.html" class="footer-link">Automatización de Tareas</a></li>
+          <li><a href="servicios.html" class="footer-link">Marketing Inteligente</a></li>
+          <li><a href="servicios.html" class="footer-link">Auditoría Competitiva</a></li>
+          <li><a href="servicios.html" class="footer-link">Desarrollo Web & Apps</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h3 class="footer-title">Newsletter</h3>
+        <p>Suscríbete para recibir insights semanales sobre automatización e IA aplicada a negocios.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Tu email corporativo" required id="newsletter-email">
+          <button type="submit" aria-label="Suscribirse">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Core Logic Solutions. Todos los derechos reservados.</p>
+      <p>Diseño y Tecnología con Inteligencia Artificial.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot Widget (Floating Assistant) -->
+  <div class="chatbot-widget" id="chatbot-widget-container">
+    <button class="chatbot-bubble" id="chatbot-trigger" aria-label="Abrir Asistente Virtual">
+      <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+    </button>
+    <div class="chatbot-panel" id="chatbot-panel-card">
+      <div class="chatbot-header">
+        <div class="chatbot-profile">
+          <div class="chatbot-avatar">🤖</div>
+          <div class="chatbot-name">
+            <h4>CoreBot</h4>
+            <span class="chatbot-status">En línea</span>
+          </div>
+        </div>
+        <button class="chatbot-close" id="chatbot-close-btn" aria-label="Cerrar chat">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages-box"></div>
+      <div class="chatbot-suggestions">
+        <button class="suggestion-btn" data-key="services">Servicios</button>
+        <button class="suggestion-btn" data-key="automation">¿Cómo funciona la IA?</button>
+        <button class="suggestion-btn" data-key="audit">Simular Auditoría</button>
+        <button class="suggestion-btn" data-key="pricing">Presupuestos</button>
+        <button class="suggestion-btn" data-key="human">Hablar con Humano</button>
+      </div>
+      <div class="chatbot-input-area">
+        <input type="text" id="chat-input" placeholder="Pregunta algo sobre IA...">
+        <button id="chat-send" aria-label="Enviar mensaje">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/configurator.js"></script>
+</body>
+</html>
