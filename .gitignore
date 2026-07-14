@@ -2,6 +2,15 @@
 git-portable/
 .agents/
 
-# Scripts temporales de configuración
+# Archivos empaquetados
+*.zip
+
+# Scripts temporales de configuración e inicio
 install_git_portable.ps1
 update_mcp.ps1
+git_init_commit.ps1
+git_deploy_github.ps1
+test_token.ps1
+list_repos.ps1
+push_test.ps1
+
