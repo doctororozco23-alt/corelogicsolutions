@@ -9,24 +9,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // 1. Encolar Estilos y Scripts del Tema
 function core_logic_theme_assets() {
-    // Cargar estilo principal de la carpeta de assets
-    wp_enqueue_style( 'theme-style', get_template_directory_uri() . '/assets/css/style.css', array(), '1.0' );
+    // Cargar estilo principal desde la raíz del tema (style.css)
+    wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array(), '1.1' );
 
     // Cargar script principal global
-    wp_enqueue_script( 'theme-main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true );
+    wp_enqueue_script( 'theme-main', get_template_directory_uri() . '/js/main.js', array(), '1.1', true );
 
     // Cargar chatbot global flotante
-    wp_enqueue_script( 'theme-chatbot', get_template_directory_uri() . '/assets/js/chatbot.js', array(), '1.0', true );
+    wp_enqueue_script( 'theme-chatbot', get_template_directory_uri() . '/js/chatbot.js', array(), '1.1', true );
 
     // Cargar scripts interactivos condicionalmente en la página de Servicios
     if ( is_page_template( 'page-servicios.php' ) || is_page( 'servicios' ) ) {
-        wp_enqueue_script( 'theme-auditor', get_template_directory_uri() . '/assets/js/auditor.js', array(), '1.0', true );
-        wp_enqueue_script( 'theme-calculator', get_template_directory_uri() . '/assets/js/calculator.js', array(), '1.0', true );
+        wp_enqueue_script( 'theme-auditor', get_template_directory_uri() . '/js/auditor.js', array(), '1.1', true );
+        wp_enqueue_script( 'theme-calculator', get_template_directory_uri() . '/js/calculator.js', array(), '1.1', true );
     }
 
     // Cargar script del cotizador interactivo en la página de Contacto
     if ( is_page_template( 'page-contacto.php' ) || is_page( 'contacto' ) ) {
-        wp_enqueue_script( 'theme-configurator', get_template_directory_uri() . '/assets/js/configurator.js', array(), '1.0', true );
+        wp_enqueue_script( 'theme-configurator', get_template_directory_uri() . '/js/configurator.js', array(), '1.1', true );
     }
 }
 add_action( 'wp_enqueue_scripts', 'core_logic_theme_assets' );
