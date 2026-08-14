@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto y cotización | Core Logic Solutions</title>
+  <meta name="description" content="Pide una consulta gratis o cotiza paquetes de automatización, SEO, auditorías, web y apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">CL</div>
+        <span>Core Logic Solutions<small>LLC · Automatización digital</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">Menú</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="proceso.html">Cómo trabajamos</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a class="btn btn-primary btn-sm" href="contacto.html">Cotizar</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <div class="eyebrow reveal">Consulta gratis · respuesta en 1 día hábil (típico)</div>
+        <h1 class="reveal">Cuéntanos qué necesitas</h1>
+        <p class="reveal reveal-delay-1">
+          Marca uno o más paquetes para estimar la inversión y envía un mensaje corto.
+          Confirmaremos si el precio fijo aplica o propondremos un alcance simple.
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container grid-2" style="align-items:start">
+        <div class="form-card reveal">
+          <h2 class="mt-0" style="font-size:1.3rem;font-family:var(--display);font-weight:400">Configurador de proyecto</h2>
+          <p class="muted" style="margin-top:0">Los plazos asumen trabajo en paralelo cuando es posible.</p>
+
+          <div class="builder" style="margin-top:1rem">
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="300" data-weeks="2" data-name="Automatización con IA ($300)" value="automation" /> Automatización con IA</label>
+              <span class="amt">$300</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="200" data-weeks="3" data-name="Marketing y SEO con IA ($200)" value="marketing" /> Marketing y SEO con IA</label>
+              <span class="amt">$200</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="50" data-weeks="1" data-name="Auditoría de procesos — Básica ($50)" value="biz-basic" /> Auditoría de procesos — Básica</label>
+              <span class="amt">$50</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="100" data-weeks="2" data-name="Auditoría de procesos — Estándar ($100)" value="biz-std" /> Auditoría de procesos — Estándar</label>
+              <span class="amt">$100</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="200" data-weeks="3" data-name="Auditoría de procesos — Avanzada ($200)" value="biz-adv" /> Auditoría de procesos — Avanzada</label>
+              <span class="amt">$200</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="75" data-weeks="1" data-name="Auditoría de competencia — Básica ($75)" value="comp-basic" /> Auditoría de competencia — Básica</label>
+              <span class="amt">$75</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="150" data-weeks="2" data-name="Auditoría de competencia — Estándar ($150)" value="comp-std" /> Auditoría de competencia — Estándar</label>
+              <span class="amt">$150</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="300" data-weeks="3" data-name="Auditoría de competencia — Avanzada ($300)" value="comp-adv" /> Auditoría de competencia — Avanzada</label>
+              <span class="amt">$300</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="400" data-weeks="4" data-name="Sitio web ($400)" value="website" /> Sitio web de negocio</label>
+              <span class="amt">$400</span>
+            </div>
+            <div class="builder-item">
+              <label><input type="checkbox" data-price="1000" data-weeks="6" data-name="App MVP ($1000)" value="app" /> App web / móvil MVP</label>
+              <span class="amt">$1,000</span>
+            </div>
+          </div>
+
+          <div class="builder-total">
+            <span>Inversión estimada: <strong id="budget-total">$0</strong></span>
+            <span>Entrega típica: <strong id="budget-weeks">—</strong></span>
+          </div>
+          <p class="help">Estimación con precios publicados. Cotización final tras revisar tus herramientas y metas.</p>
+
+          <hr style="border:none;border-top:1px solid var(--line);margin:1.5rem 0" />
+
+          <form class="form-grid" action="https://formsubmit.co/contact@corelogicsolutionsllc.com" method="POST">
+            <input type="hidden" name="_subject" value="Nueva consulta — Core Logic Solutions" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="selected_services" id="selected-services" value="" />
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+            <div>
+              <label for="name">Nombre completo</label>
+              <input id="name" name="name" type="text" required autocomplete="name" placeholder="Ana Pérez" />
+            </div>
+            <div>
+              <label for="email">Email de trabajo</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="tu@empresa.com" />
+            </div>
+            <div>
+              <label for="company">Empresa / proyecto (opcional)</label>
+              <input id="company" name="company" type="text" autocomplete="organization" placeholder="Mi Empresa LLC" />
+            </div>
+            <div>
+              <label for="budget_note">Estimación (se rellena sola)</label>
+              <input id="budget_note" name="budget_note" type="text" readonly placeholder="Marca paquetes arriba" />
+            </div>
+            <div class="full">
+              <label for="message">¿En qué te ayudamos?</label>
+              <textarea id="message" name="message" required placeholder="Herramientas que usas hoy, el problema y si hay fecha límite..."></textarea>
+            </div>
+            <div class="full">
+              <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+              <p class="help">
+                Envío a <strong>contact@corelogicsolutionsllc.com</strong> vía FormSubmit.
+                También: <a href="mailto:contact@corelogicsolutionsllc.com">abrir email</a>.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-side reveal reveal-delay-1">
+          <div class="info-box">
+            <h3>Email</h3>
+            <p><a href="mailto:contact@corelogicsolutionsllc.com">contact@corelogicsolutionsllc.com</a></p>
+          </div>
+          <div class="info-box">
+            <h3>Con quién trabajamos</h3>
+            <p>Startups, pymes, freelancers, clínicas, agencias, negocios locales y equipos remotos — cualquier industria.</p>
+          </div>
+          <div class="info-box">
+            <h3>Cómo cotizamos</h3>
+            <p>Si encaja en un paquete starter, confirmamos el precio fijo. Si no, enviamos un alcance corto por escrito antes de facturar.</p>
+          </div>
+          <div class="info-box">
+            <h3>Idioma y entrega</h3>
+            <p>Comunicación y entregables en <strong>español</strong>. Equipo 100% remoto.</p>
+          </div>
+          <div class="info-box">
+            <h3>¿Prefieres empezar simple?</h3>
+            <p>Escríbenos: (1) industria, (2) tarea repetitiva que más duele, (3) herramientas que ya pagas.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html" style="color:#fff;margin-bottom:0.85rem">
+          <div class="logo-mark">CL</div>
+          <span>Core Logic Solutions<small style="color:#8a9aab">LLC</small></span>
+        </a>
+        <p style="margin:0;max-width:28rem;color:#9aabbc">Cotizaciones claras, precios de entrada bajos.</p>
+      </div>
+      <div>
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proceso.html">Cómo trabajamos</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contact@corelogicsolutionsllc.com">contact@corelogicsolutionsllc.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Core Logic Solutions LLC.</span>
+      <span>corelogicsolutionsllc.com</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" rx="24" fill="#E8F4F6"/>
+  <rect x="90" y="40" width="360" height="240" rx="14" fill="#0B1C24"/>
+  <rect x="102" y="54" width="336" height="24" rx="6" fill="#1E293B"/>
+  <circle cx="118" cy="66" r="5" fill="#F87171"/><circle cx="134" cy="66" r="5" fill="#E8A838"/><circle cx="150" cy="66" r="5" fill="#34D399"/>
+  <rect x="102" y="90" width="336" height="176" rx="6" fill="#F8FAFC"/>
+  <rect x="120" y="110" width="140" height="14" rx="7" fill="#0F4C5C"/>
+  <rect x="120" y="136" width="200" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="120" y="154" width="180" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="120" y="180" width="100" height="32" rx="16" fill="#1A7A8C"/>
+  <rect x="340" y="110" width="80" height="100" rx="10" fill="#E8F4F6" stroke="#C7E4EA"/>
+  <rect x="480" y="90" width="90" height="170" rx="14" fill="#0F4C5C"/>
+  <rect x="492" y="108" width="66" height="120" rx="8" fill="#F8FAFC"/>
+  <rect x="502" y="120" width="46" height="8" rx="4" fill="#0F4C5C"/>
+  <rect x="502" y="138" width="36" height="6" rx="3" fill="#CBD5E1"/>
+  <rect x="502" y="154" width="40" height="6" rx="3" fill="#CBD5E1"/>
+  <rect x="502" y="180" width="46" height="20" rx="10" fill="#E8A838"/>
+  <text x="270" y="320" text-anchor="middle" fill="#0F4C5C" font-family="Segoe UI,Arial" font-size="16" font-weight="700">Sitio web responsive · rápido · listo para leads</text>
+</svg>

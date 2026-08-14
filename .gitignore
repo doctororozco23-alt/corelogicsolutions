@@ -1,0 +1,9 @@
+# Configuración con API key sensible
+api/config.php
+
+# Archivos del sistema operativo / IDE
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

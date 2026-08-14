@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" fill="none">
+  <rect width="720" height="480" rx="28" fill="url(#bg)"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="480">
+      <stop stop-color="#E8F4F6"/>
+      <stop offset="1" stop-color="#FFF6E5"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="280" height="180" rx="18" fill="#fff" stroke="#E2E8F0" stroke-width="2"/>
+  <rect x="72" y="76" width="140" height="14" rx="7" fill="#0F4C5C"/>
+  <rect x="72" y="106" width="200" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="72" y="126" width="170" height="8" rx="4" fill="#CBD5E1"/>
+  <rect x="72" y="160" width="110" height="36" rx="18" fill="#0F4C5C"/>
+  <rect x="360" y="48" width="300" height="180" rx="18" fill="#0F4C5C"/>
+  <text x="510" y="100" text-anchor="middle" fill="#fff" font-family="Segoe UI,Arial" font-size="18" font-weight="700">Paquetes reales</text>
+  <rect x="390" y="125" width="240" height="28" rx="8" fill="#1A7A8C"/>
+  <rect x="390" y="165" width="240" height="28" rx="8" fill="#16697A"/>
+  <text x="510" y="145" text-anchor="middle" fill="#fff" font-family="Segoe UI,Arial" font-size="13">Automatización desde $300</text>
+  <text x="510" y="185" text-anchor="middle" fill="#fff" font-family="Segoe UI,Arial" font-size="13">Web desde $400</text>
+  <rect x="48" y="260" width="180" height="160" rx="18" fill="#fff" stroke="#C7E4EA" stroke-width="2"/>
+  <circle cx="138" cy="320" r="28" fill="#E8F4F6" stroke="#0F4C5C" stroke-width="3"/>
+  <text x="138" y="380" text-anchor="middle" fill="#0F4C5C" font-family="Segoe UI,Arial" font-size="14" font-weight="700">Auditoría</text>
+  <rect x="260" y="260" width="180" height="160" rx="18" fill="#fff" stroke="#C7E4EA" stroke-width="2"/>
+  <circle cx="350" cy="320" r="28" fill="#FFF6E5" stroke="#E8A838" stroke-width="3"/>
+  <text x="350" y="380" text-anchor="middle" fill="#0F4C5C" font-family="Segoe UI,Arial" font-size="14" font-weight="700">Marketing</text>
+  <rect x="472" y="260" width="180" height="160" rx="18" fill="#fff" stroke="#C7E4EA" stroke-width="2"/>
+  <circle cx="562" cy="320" r="28" fill="#E8F4F6" stroke="#1A7A8C" stroke-width="3"/>
+  <text x="562" y="380" text-anchor="middle" fill="#0F4C5C" font-family="Segoe UI,Arial" font-size="14" font-weight="700">Apps</text>
+</svg>
