@@ -14,3 +14,13 @@ test_token.ps1
 list_repos.ps1
 push_test.ps1
 
+# Python scripts
+*.py
+
+# Temp and diagnostic files
+plugins.html
+plugins.php
+error_log
+file_list.txt
+wp-file-scanner.php
+
