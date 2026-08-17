@@ -1,414 +1,298 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuestros Servicios | Core Logic Solutions</title>
-  <meta name="description" content="Descubre nuestros servicios de automatización con IA, marketing digital, auditorías de mercado y desarrollo de software para potenciar tu empresa.">
-  
-  <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios y flujos de trabajo | Core Logic Solutions</title>
+  <meta name="description" content="Flujos reales de automatización, marketing SEO, auditorías, web y apps con imágenes profesionales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
-
-  <!-- Orbes de luz de fondo neo-futurista -->
-  <div class="bg-glow-orb orb-cyan"></div>
-  <div class="bg-glow-orb orb-purple"></div>
-
-  <!-- Header / Navbar -->
-  <header class="header" id="main-header">
-    <div class="nav-container">
-      <a href="index.html" class="logo" id="logo-link">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6 12H6L12 6z"/></svg>
-        </div>
-        <span>Core Logic <span class="gradient-text">Solutions</span></span>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="nav">
+      <a class="logo" href="index.html">
+        <div class="logo-mark">CL</div>
+        <span>Core Logic Solutions<small>LLC · Automatización digital</small></span>
       </a>
-      <nav aria-label="Navegación principal">
-        <ul class="nav-menu" id="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-          <li class="nav-item"><a href="servicios.html" class="nav-link active">Servicios</a></li>
-          <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
-          <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
-        </ul>
-      </nav>
-      <button class="hamburger" id="mobile-menu-toggle" aria-label="Abrir menú de navegación">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">Menú</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a class="active" href="servicios.html">Servicios</a></li>
+        <li><a href="proceso.html">Cómo trabajamos</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a class="btn btn-primary btn-sm" href="contacto.html">Cotizar</a></li>
+      </ul>
     </div>
   </header>
 
-  <!-- Banner / Hero de la Página -->
-  <section class="section" style="padding-top: 10rem; text-align: center; max-width: 800px; margin: 0 auto;">
-    <div class="hero-badge reveal">Soluciones Avanzadas</div>
-    <h1 style="font-size: 3rem; margin-bottom: 1.5rem;" class="reveal">Servicios de <span class="gradient-text">Ingeniería e IA</span></h1>
-    <p style="color: var(--text-muted); font-size: 1.15rem;" class="reveal">Construimos la infraestructura digital que tu empresa necesita para liberar su máximo potencial operacional y captar más clientes en la era de la inteligencia artificial.</p>
-  </section>
-
-  <!-- Catálogo de Servicios Detallado -->
-  <section class="section" id="servicios-catalogo" style="padding-top: 2rem;">
-    <div class="grid-3">
-      
-      <!-- Servicio 1: Automatización -->
-      <article class="glass-card reveal">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">⚙️</div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Automatización de Tareas</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Conectamos tus sistemas existentes (CRM, ERP, correos, bases de datos) mediante plataformas de orquestación avanzadas como n8n y Zapier. Eliminamos tareas administrativas repetitivas.</p>
-        <ul style="color: var(--primary-cyan); list-style: none; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem;">
-          <li>✔ Flujos de facturación automáticos</li>
-          <li>✔ Sincronización de leads multi-canal</li>
-          <li>✔ Respuestas y reportes automáticos</li>
-        </ul>
-      </article>
-
-      <!-- Servicio 2: Marketing Digital -->
-      <article class="glass-card reveal">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">📈</div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Marketing Digital & SEO IA</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Optimizamos tus campañas digitales utilizando IA para el análisis de audiencias y la redacción de contenidos optimizados semánticamente. Implementamos estrategias SEO avanzadas.</p>
-        <ul style="color: var(--primary-cyan); list-style: none; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem;">
-          <li>✔ SEO técnico y Programmatic SEO</li>
-          <li>✔ Copywriting estratégico con IA</li>
-          <li>✔ Embudos de ventas automatizados</li>
-        </ul>
-      </article>
-
-      <!-- Servicio 3: Auditorías Web y Competencia -->
-      <article class="glass-card reveal">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">🔍</div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Auditorías e Inteligencia</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Auditorías técnicas exhaustivas de tu sitio web, competencia y brechas comerciales en tu nicho para detectar oportunidades clave donde la IA puede darte una ventaja de rendimiento.</p>
-        <ul style="color: var(--primary-cyan); list-style: none; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem;">
-          <li>✔ Auditorías SEO, rendimiento y seguridad</li>
-          <li>✔ Análisis competitivo por IA</li>
-          <li>✔ Detección de fugas de conversión</li>
-        </ul>
-      </article>
-
-      <!-- Servicio 4: Desarrollo Web a Medida -->
-      <article class="glass-card reveal">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">💻</div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Páginas Web Premium</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Desarrollamos páginas web corporativas rápidas, seguras y visualmente impactantes que captan leads al instante. Optimizadas para velocidad y con un diseño premium y responsive.</p>
-        <ul style="color: var(--primary-cyan); list-style: none; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem;">
-          <li>✔ Sitios web interactivos y dinámicos</li>
-          <li>✔ Diseños premium listos para móviles</li>
-          <li>✔ Carga rápida (Core Web Vitals optimizados)</li>
-        </ul>
-      </article>
-
-      <!-- Servicio 5: Apps de Negocios y Móviles -->
-      <article class="glass-card reveal">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">📱</div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Aplicaciones Web & Móviles</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Diseño y desarrollo de aplicaciones móviles a medida (iOS & Android) y portales web internos para centralizar las operaciones de tu negocio e interactuar con tus clientes.</p>
-        <ul style="color: var(--primary-cyan); list-style: none; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem;">
-          <li>✔ Aplicaciones empresariales a medida</li>
-          <li>✔ Apps nativas y multiplataforma</li>
-          <li>✔ Conectividad total con tu base de datos</li>
-        </ul>
-      </article>
-
-      <!-- Servicio 6: Auditoría de Negocios -->
-      <article class="glass-card reveal">
-        <div style="font-size: 2rem; margin-bottom: 1rem;">📈</div>
-        <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Auditoría de Negocios</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;">Analizamos la eficiencia administrativa interna de tu empresa. Trazamos mapas de procesos manuales e identificamos tareas elegibles para ser asumidas por agentes autónomos de IA.</p>
-        <ul style="color: var(--primary-cyan); list-style: none; font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem;">
-          <li>✔ Mapeo de flujos de trabajo repetitivos</li>
-          <li>✔ Análisis coste/beneficio de automatización</li>
-          <li>✔ Plan de adopción tecnológica e IA</li>
-        </ul>
-      </article>
-      
-    </div>
-  </section>
-
-  <!-- WIDGET 1: Previsualizador de Auditoría IA en Tiempo Real -->
-  <section class="section" id="web-auditor-section" style="background: var(--bg-deep);">
-    <div class="section-title reveal">
-      <h2>Previsualizador de Auditorías <span class="gradient-text">por IA</span></h2>
-      <p>Simula un reporte en tiempo real para tu negocio. Alterna entre la Auditoría Interna y de Competencia para ver el nivel de análisis básico, intermedio y avanzado.</p>
-    </div>
-
-    <!-- Buscador de Empresa -->
-    <div class="auditor-box glass-card reveal" style="margin-bottom: 3rem;">
-      <form class="audit-input-group" id="audit-form" style="margin-bottom: 0;">
-        <input type="text" id="audit-url-input" placeholder="Introduce el nombre de tu empresa (ej. Inversiones Pérez)" required>
-        <button type="button" class="btn-primary" id="start-audit-btn">Generar Previsualización</button>
-      </form>
-    </div>
-
-    <!-- Controles de Auditoría e Informe Ficticio -->
-    <div class="reveal">
-      <div class="audit-controls">
-        <!-- Pestañas de Tipo de Auditoría -->
-        <div class="audit-tabs">
-          <button class="audit-tab-btn active" data-audit="business">Auditoría de Negocios</button>
-          <button class="audit-tab-btn" data-audit="competitor">Auditoría de Competidores</button>
-        </div>
-
-        <!-- Píldoras de Niveles de Análisis -->
-        <div class="tier-pills">
-          <button class="tier-pill active" data-tier="basic">Análisis Básico</button>
-          <button class="tier-pill" data-tier="intermediate">Análisis Intermedio</button>
-          <button class="tier-pill" data-tier="advanced">Análisis Avanzado</button>
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <div class="eyebrow reveal">Servicios · subservicios · flujo real</div>
+        <h1 class="reveal">Servicios con entregables y proceso visible</h1>
+        <p class="reveal reveal-delay-1">
+          Cada oferta incluye fotografía profesional, subservicios, el flujo real que ejecutamos contigo y el precio de entrada.
+        </p>
+        <div class="chip-row reveal reveal-delay-2">
+          <a class="btn btn-secondary btn-sm" href="#automatizacion">Automatización</a>
+          <a class="btn btn-secondary btn-sm" href="#marketing">Marketing</a>
+          <a class="btn btn-secondary btn-sm" href="#auditorias">Auditorías</a>
+          <a class="btn btn-secondary btn-sm" href="#web">Web</a>
+          <a class="btn btn-secondary btn-sm" href="#apps">Apps</a>
         </div>
       </div>
+    </div>
 
-      <!-- Papel del Informe de Previsualización -->
-      <div class="report-paper">
-        <div class="report-watermark">PREVISUALIZACIÓN</div>
-        
-        <div class="report-header-preview">
-          <div class="report-logo">
-            <div class="report-logo-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6 12H6L12 6z"/></svg>
+    <article class="service-block" id="automatizacion">
+      <div class="container">
+        <div class="service-layout">
+          <div class="service-visual reveal">
+            <img src="assets/automation.jpg" width="960" height="660" alt="Sala de control de automatización con flujos de trabajo en pantallas" loading="lazy" />
+          </div>
+          <div class="service-copy reveal reveal-delay-1">
+            <h2>Automatización con IA</h2>
+            <p class="intro">Conectamos las herramientas que ya usas para eliminar copiar/pegar, recordatorios manuales y reportes a mano. Paquete inicial <strong>desde $300 · ~2 semanas</strong>.</p>
+            <div class="meta" style="display:flex;flex-wrap:wrap;gap:.45rem">
+              <span class="badge">Desde $300</span>
+              <span class="badge badge-teal">~2 semanas</span>
             </div>
-            <span>Core Logic <span class="gradient-text">Solutions</span></span>
-          </div>
-          <div class="report-meta-info">
-            <div>Tipo: <span id="report-meta-type">Auditoría de Negocios (Interna)</span></div>
-            <div>Empresa: <span id="report-meta-company">Tu Empresa S.A.</span></div>
-            <div>Nivel: <span id="report-meta-tier">Plan Básico</span></div>
-          </div>
-        </div>
-
-        <div class="report-title-section">
-          <h3 id="report-title-text">Reporte de Eficiencia y Automatización de Negocios</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem;">Fecha de Análisis: <span id="report-meta-date">03/07/2026</span></p>
-        </div>
-
-        <div class="report-summary-box">
-          <!-- Gráfico radial de Score -->
-          <div class="score-radial" style="margin-bottom: 0;">
-            <svg>
-              <circle class="bg-circle" cx="70" cy="70" r="45"></circle>
-              <circle class="progress-circle" id="audit-score-circle" cx="70" cy="70" r="45"></circle>
-            </svg>
-            <div class="score-text-center">
-              <span class="score-number" id="audit-score-number">74</span>
-              <span class="score-label">Score</span>
-            </div>
-          </div>
-          <div style="color: var(--text-light); font-size: 0.95rem; line-height: 1.5;">
-            <strong>Resumen Ejecutivo:</strong> Evaluación preliminar automatizada de tu salud digital operativa. Se detectan ineficiencias de flujo de trabajo y oportunidades sustanciales de crecimiento integrando automatización de IA a bajo costo.
-          </div>
-        </div>
-
-        <!-- SECCIÓN 1: DIAGNÓSTICO GENERAL (Siempre Visible) -->
-        <div class="report-section" id="report-sec-1">
-          <h4 class="report-section-title">1. Diagnóstico de Infraestructura y Procesos Generales</h4>
-          <ul class="report-list" id="report-sec-1-content">
-            <!-- Rellenado por JS -->
-          </ul>
-        </div>
-
-        <!-- SECCIÓN 2: ANÁLISIS DETALLADO DE PROCESOS (Difuminado en Básico) -->
-        <div class="report-section" id="report-sec-2">
-          <h4 class="report-section-title">2. Análisis de Cuellos de Botella y Fugas de Tiempo</h4>
-          
-          <div class="blur-container" id="blur-container-sec-2">
-            <ul class="report-list" id="report-sec-2-content">
-              <!-- Rellenado por JS -->
-            </ul>
-          </div>
-
-          <!-- Overlay de Bloqueo -->
-          <div class="lock-overlay" id="lock-sec-2" style="display: none;">
-            <div class="lock-box">
-              <div class="lock-icon">🔒</div>
-              <h4>Contenido Premium Bloqueado</h4>
-              <p>El análisis de procesos está disponible únicamente en el <strong style="color: var(--primary-cyan);"><span class="next-tier">Plan Intermedio</span></strong>.</p>
-              <button type="button" class="btn-unlock">Desbloquear Análisis</button>
+            <h3 style="margin:1.25rem 0 .5rem;font-size:1.05rem">Subservicios</h3>
+            <div class="subservice-grid">
+              <div class="subservice"><h4>Sincronización de leads multi-canal</h4><p>Web, formularios, ads o WhatsApp → CRM o hoja, con etiqueta de origen.</p></div>
+              <div class="subservice"><h4>Flujos de facturación y cobros</h4><p>Al marcar “pagado”: PDF, email al cliente, registro en contabilidad o Drive.</p></div>
+              <div class="subservice"><h4>Respuestas y reportes automáticos</h4><p>Resúmenes diarios/semanales; clasificación de tickets con LLM opcional.</p></div>
+              <div class="subservice"><h4>Agentes de tareas (LLM)</h4><p>Borradores, etiquetado y extracción de datos con revisión humana si la pides.</p></div>
             </div>
           </div>
         </div>
-
-        <!-- SECCIÓN 3: PLAN DE RECOMENDACIONES IA (Difuminado en Básico e Intermedio) -->
-        <div class="report-section" id="report-sec-3">
-          <h4 class="report-section-title">3. Plan de Recomendaciones e Integración de IA Paso a Paso</h4>
-          
-          <div class="blur-container" id="blur-container-sec-3">
-            <ul class="report-list" id="report-sec-3-content">
-              <!-- Rellenado por JS -->
-            </ul>
+        <div class="flow reveal">
+          <h3>Flujo real de trabajo — Automatización</h3>
+          <div class="flow-steps">
+            <div class="flow-step"><div><strong>1. Inventario de herramientas y dolor</strong><p>Listamos apps, accesos y el proceso #1 que más tiempo roba. Definimos el “antes” en horas/semana.</p></div></div>
+            <div class="flow-step"><div><strong>2. Mapa del flujo (blueprint)</strong><p>Disparador → condiciones → acciones → excepciones. Apruebas el mapa antes de construir.</p></div></div>
+            <div class="flow-step"><div><strong>3. Construcción en n8n o Zapier</strong><p>Workflow en tu cuenta cuando es posible. Pruebas con datos de muestra.</p></div></div>
+            <div class="flow-step"><div><strong>4. Capa de IA (si aplica)</strong><p>Prompts versionados, límites y fallback a humano si el modelo falla.</p></div></div>
+            <div class="flow-step"><div><strong>5. Prueba en paralelo</strong><p>3–5 casos reales en sombra. Corregimos edge cases contigo.</p></div></div>
+            <div class="flow-step"><div><strong>6. Puesta en vivo + manual</strong><p>Activamos, runbook y walkthrough. Tú eres dueño del workflow.</p></div></div>
           </div>
+          <div class="flow-tools"><span>n8n</span><span>Zapier</span><span>Webhooks</span><span>OpenAI / Claude / Gemini</span><span>CRM</span></div>
+          <p style="margin:1.1rem 0 0"><a class="btn btn-primary btn-sm" href="contacto.html?servicio=automatizacion">Solicitar automatización</a></p>
+        </div>
+      </div>
+    </article>
 
-          <!-- Overlay de Bloqueo -->
-          <div class="lock-overlay" id="lock-sec-3" style="display: none;">
-            <div class="lock-box">
-              <div class="lock-icon">🔒</div>
-              <h4>Plan de Implementación IA Bloqueado</h4>
-              <p>Las recomendaciones y automatizaciones específicas de IA requieren el <strong style="color: var(--primary-pink);"><span class="next-tier">Plan Avanzado</span></strong>.</p>
-              <button type="button" class="btn-unlock">Revelar Plan Completo</button>
+    <article class="service-block" id="marketing">
+      <div class="container">
+        <div class="service-layout">
+          <div class="service-visual reveal">
+            <img src="assets/marketing.jpg" width="960" height="660" alt="Sala de marketing con paneles de crecimiento y analítica" loading="lazy" />
+          </div>
+          <div class="service-copy reveal reveal-delay-1">
+            <h2>Marketing digital y SEO con IA</h2>
+            <p class="intro">Base de visibilidad y contenido que puedes mantener. <strong>Desde $200 · ~3 semanas</strong>.</p>
+            <div class="meta" style="display:flex;flex-wrap:wrap;gap:.45rem">
+              <span class="badge">Desde $200</span>
+              <span class="badge badge-teal">~3 semanas</span>
+            </div>
+            <h3 style="margin:1.25rem 0 .5rem;font-size:1.05rem">Subservicios</h3>
+            <div class="subservice-grid">
+              <div class="subservice"><h4>SEO técnico base</h4><p>Títulos, metas, headings, indexación, velocidad y mapa de sitio.</p></div>
+              <div class="subservice"><h4>Mapa de temas y keywords</h4><p>Lista priorizada alineada a tu oferta real.</p></div>
+              <div class="subservice"><h4>Copywriting con IA (editado)</h4><p>Borradores con LLM + edición humana para tono y CTA.</p></div>
+              <div class="subservice"><h4>Embudo simple de captación</h4><p>Landing + formulario + secuencia básica o handoff a CRM.</p></div>
             </div>
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- WIDGET 2: Calculadora de ROI de Automatización -->
-  <section class="section" id="roi-calculator-section">
-    <div class="section-title reveal">
-      <h2>Calculadora de ROI de <span class="gradient-text">Automatización</span></h2>
-      <p>Descubre cuánto tiempo y dinero puedes ahorrar mensualmente optimizando tus flujos repetitivos con IA.</p>
-    </div>
-
-    <div class="calculator-box glass-card reveal" id="calculator-widget">
-      <div class="calc-sliders">
-        <!-- Slider 1: Empleados -->
-        <div class="slider-group">
-          <div class="slider-header">
-            <span>Número de Empleados</span>
-            <span class="slider-value" id="val-employees">1</span>
+        <div class="flow reveal">
+          <h3>Flujo real de trabajo — Marketing y SEO</h3>
+          <div class="flow-steps">
+            <div class="flow-step"><div><strong>1. Brief del negocio</strong><p>Qué vendes, a quién, zona/idioma y páginas actuales.</p></div></div>
+            <div class="flow-step"><div><strong>2. Auditoría SEO rápida</strong><p>Errores técnicos, contenido débil y competencia en 3–5 términos.</p></div></div>
+            <div class="flow-step"><div><strong>3. Plan de contenidos</strong><p>Priorizamos 5–15 piezas. Tú apruebas antes de producir en volumen.</p></div></div>
+            <div class="flow-step"><div><strong>4. Producción asistida por IA</strong><p>Borradores editados, listos para CMS o HTML, con metas y H1/H2.</p></div></div>
+            <div class="flow-step"><div><strong>5. Embudo mínimo</strong><p>CTA, formulario, página de gracias y notificación de lead.</p></div></div>
+            <div class="flow-step"><div><strong>6. Plan del próximo mes</strong><p>Informe de lo hecho y 4–6 acciones siguientes.</p></div></div>
           </div>
-          <input type="range" class="calc-slider" id="calc-employees" min="1" max="100" value="10">
-        </div>
-
-        <!-- Slider 2: Horas repetitivas semanales -->
-        <div class="slider-group">
-          <div class="slider-header">
-            <span>Horas semanales en tareas repetitivas (por empleado)</span>
-            <span class="slider-value" id="val-hours">1h</span>
-          </div>
-          <input type="range" class="calc-slider" id="calc-hours" min="1" max="40" value="8">
-        </div>
-
-        <!-- Slider 3: Coste por hora medio -->
-        <div class="slider-group">
-          <div class="slider-header">
-            <span>Salario/Costo medio por hora</span>
-            <span class="slider-value" id="val-rate">$25</span>
-          </div>
-          <input type="range" class="calc-slider" id="calc-rate" min="10" max="100" value="25">
+          <div class="flow-tools"><span>Search Console</span><span>Analytics</span><span>LLM copy</span><span>CMS / HTML</span></div>
+          <p style="margin:1.1rem 0 0"><a class="btn btn-primary btn-sm" href="contacto.html?servicio=marketing">Solicitar marketing</a></p>
         </div>
       </div>
+    </article>
 
-      <div class="calc-results">
-        <!-- Horas ahorradas al mes -->
-        <div class="glass-card result-card" id="result-hours">
-          <h4>Horas Ahorradas al Mes</h4>
-          <div class="result-value" id="roi-hours-saved">0h</div>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">Tiempo que reenfocarás en tareas estratégicas.</p>
-        </div>
-
-        <!-- Ahorro de dinero mensual -->
-        <div class="glass-card result-card" id="result-money">
-          <h4>Ahorro de Dinero Mensual</h4>
-          <div class="result-value" id="roi-money-saved">$0</div>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">Reducción de coste directo de administración.</p>
-        </div>
-
-        <!-- Ahorro Anual Estimado -->
-        <div class="glass-card result-card highlight" id="result-annual" style="grid-column: span 2;">
-          <h4>Ahorro Anual Estimado</h4>
-          <div class="result-value" id="roi-annual-savings">$0</div>
-          <div style="font-weight: bold; color: var(--primary-pink); font-size: 1.1rem; margin-top: 0.5rem;" id="roi-efficiency-boost">+250%</div>
-          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Aumento estimado en eficiencia operativa.</p>
-        </div>
-
-        <p class="calc-disclaimer">* Los cálculos asumen una automatización efectiva del 75% del tiempo gastado en tareas repetitivas identificadas en la auditoría.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer" id="footer-section">
-    <div class="footer-grid">
-      <div class="footer-info">
-        <a href="index.html" class="logo">
-          <div class="logo-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6 12H6L12 6z"/></svg>
+    <article class="service-block" id="auditorias">
+      <div class="container">
+        <div class="service-layout">
+          <div class="service-visual reveal">
+            <img src="assets/audit.jpg" width="960" height="660" alt="Sala de juntas de auditoría y estrategia de negocio" loading="lazy" />
           </div>
-          <span>Core Logic <span class="gradient-text">Solutions</span></span>
+          <div class="service-copy reveal reveal-delay-1">
+            <h2>Auditorías (procesos y competencia)</h2>
+            <p class="intro">Informes reales en documento. Ideal como primer paso barato. <strong>Desde $50</strong>.</p>
+            <div class="meta" style="display:flex;flex-wrap:wrap;gap:.45rem">
+              <span class="badge">Desde $50</span>
+              <span class="badge badge-teal">1–3 semanas</span>
+            </div>
+            <h3 style="margin:1.25rem 0 .5rem;font-size:1.05rem">Planes</h3>
+            <div class="subservice-grid">
+              <div class="subservice"><h4>Procesos — Básica $50</h4><p>Cuestionario + cuellos de botella y quick wins (~1 semana).</p></div>
+              <div class="subservice"><h4>Procesos — Estándar $100</h4><p>Mapa de 1–2 flujos + horas/coste (~2 semanas).</p></div>
+              <div class="subservice"><h4>Procesos — Avanzada $200</h4><p>Roadmap de automatización y fases (~3 semanas).</p></div>
+              <div class="subservice"><h4>Competencia — $75 / $150 / $300</h4><p>De 3 rivales básicos a embudos y plan priorizado.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-top:1.5rem">
+          <div class="flow reveal">
+            <h3>Flujo — Auditoría de procesos</h3>
+            <div class="flow-steps">
+              <div class="flow-step"><div><strong>Kickoff y cuestionario</strong><p>Roles, herramientas y dolores medidos en tiempo o errores.</p></div></div>
+              <div class="flow-step"><div><strong>Entrevistas (plan ≥ Estándar)</strong><p>15–30 min con quien ejecuta el proceso.</p></div></div>
+              <div class="flow-step"><div><strong>Mapa y scoring</strong><p>Frecuencia, minutos, errores y automatizable (sí/no).</p></div></div>
+              <div class="flow-step"><div><strong>Informe + call</strong><p>PDF/Doc con prioridades y ROI estimado honesto.</p></div></div>
+            </div>
+          </div>
+          <div class="flow reveal reveal-delay-1">
+            <h3>Flujo — Auditoría de competencia</h3>
+            <div class="flow-steps">
+              <div class="flow-step"><div><strong>Definir rivales</strong><p>3–7 competidores y criterios (precio, SEO, oferta, embudo).</p></div></div>
+              <div class="flow-step"><div><strong>Recolección</strong><p>Sitios, landings, ads visibles y mensajes de valor.</p></div></div>
+              <div class="flow-step"><div><strong>Matriz y gaps</strong><p>Dónde pierdes, dónde ganas, 5–10 oportunidades.</p></div></div>
+              <div class="flow-step"><div><strong>Plan priorizado</strong><p>Qué hacer en 30/60/90 días.</p></div></div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top:1.1rem">
+          <a class="btn btn-primary btn-sm" href="contacto.html?servicio=auditoria-proceso">Auditoría de procesos</a>
+          <a class="btn btn-secondary btn-sm" href="contacto.html?servicio=auditoria-competencia">Auditoría de competencia</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="service-block" id="web">
+      <div class="container">
+        <div class="service-layout">
+          <div class="service-visual reveal">
+            <img src="assets/web.jpg" width="960" height="660" alt="Estudio de diseño web con monitor y dispositivos" loading="lazy" />
+          </div>
+          <div class="service-copy reveal reveal-delay-1">
+            <h2>Páginas web premium</h2>
+            <p class="intro">Sitios rápidos, responsive y listos para leads. Ideales para cPanel. <strong>Desde $400 · ~4 semanas</strong>.</p>
+            <div class="meta" style="display:flex;flex-wrap:wrap;gap:.45rem">
+              <span class="badge">Desde $400</span>
+              <span class="badge badge-teal">~4 semanas</span>
+            </div>
+            <h3 style="margin:1.25rem 0 .5rem;font-size:1.05rem">Subservicios</h3>
+            <div class="subservice-grid">
+              <div class="subservice"><h4>Sitio corporativo multipágina</h4><p>Inicio, servicios, proceso, precios, contacto.</p></div>
+              <div class="subservice"><h4>Diseño responsive y velocidad</h4><p>Mobile-first e imágenes optimizadas.</p></div>
+              <div class="subservice"><h4>Formularios y captación</h4><p>Contacto, cotizador o integración CRM.</p></div>
+              <div class="subservice"><h4>SEO on-page base</h4><p>Títulos, metas, headings y estructura limpia.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="flow reveal">
+          <h3>Flujo real de trabajo — Sitio web</h3>
+          <div class="flow-steps">
+            <div class="flow-step"><div><strong>1. Brief y contenido</strong><p>Logo, colores, textos y referencias visuales.</p></div></div>
+            <div class="flow-step"><div><strong>2. Estructura</strong><p>Mapa de páginas y bloques. Aprobación antes del visual final.</p></div></div>
+            <div class="flow-step"><div><strong>3. Diseño y build</strong><p>HTML/CSS/JS premium. Desktop + móvil.</p></div></div>
+            <div class="flow-step"><div><strong>4. Revisión</strong><p>1–2 rondas de feedback incluidas en el starter.</p></div></div>
+            <div class="flow-step"><div><strong>5. Publicación</strong><p>Subida a cPanel/FTP o guía paso a paso.</p></div></div>
+            <div class="flow-step"><div><strong>6. Handoff</strong><p>Código fuente y mini-manual de edición.</p></div></div>
+          </div>
+          <div class="flow-tools"><span>HTML</span><span>CSS</span><span>JS</span><span>cPanel</span><span>Animaciones</span></div>
+          <p style="margin:1.1rem 0 0"><a class="btn btn-primary btn-sm" href="contacto.html?servicio=web">Solicitar sitio web</a></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="service-block" id="apps">
+      <div class="container">
+        <div class="service-layout">
+          <div class="service-visual reveal">
+            <img src="assets/app.jpg" width="960" height="660" alt="MVP de aplicación móvil en estudio de producto" loading="lazy" />
+          </div>
+          <div class="service-copy reveal reveal-delay-1">
+            <h2>Aplicaciones web y móviles (MVP)</h2>
+            <p class="intro">Primera versión útil con alcance cerrado. <strong>Desde $1,000 · ~6 semanas</strong>. Productos grandes se cotizan aparte.</p>
+            <div class="meta" style="display:flex;flex-wrap:wrap;gap:.45rem">
+              <span class="badge">Desde $1,000</span>
+              <span class="badge badge-teal">~6 semanas</span>
+            </div>
+            <h3 style="margin:1.25rem 0 .5rem;font-size:1.05rem">Subservicios</h3>
+            <div class="subservice-grid">
+              <div class="subservice"><h4>App / portal interno</h4><p>Login básico, listados, formularios y roles simples.</p></div>
+              <div class="subservice"><h4>MVP multiplataforma</h4><p>Web-app o multiplataforma según presupuesto.</p></div>
+              <div class="subservice"><h4>Base de datos</h4><p>CRUD esencial, validaciones y backups recomendados.</p></div>
+              <div class="subservice"><h4>Integración con automatización</h4><p>Webhooks hacia n8n/Zapier.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="flow reveal">
+          <h3>Flujo real de trabajo — App MVP</h3>
+          <div class="flow-steps">
+            <div class="flow-step"><div><strong>1. Alcance must-have</strong><p>Solo funciones sin las cuales no sirve. El resto va a fase 2.</p></div></div>
+            <div class="flow-step"><div><strong>2. Prototipo de pantallas</strong><p>Wireframes y aprobación antes de codear fuerte.</p></div></div>
+            <div class="flow-step"><div><strong>3. Arquitectura mínima</strong><p>Stack, auth y entornos dev/prod simples.</p></div></div>
+            <div class="flow-step"><div><strong>4. Desarrollo por hitos</strong><p>Demos semanales o bi-semanales.</p></div></div>
+            <div class="flow-step"><div><strong>5. QA</strong><p>Casos felices + errores comunes y checklist de seguridad básica.</p></div></div>
+            <div class="flow-step"><div><strong>6. Deploy y handoff</strong><p>Despliegue, README y entrenamiento. Roadmap fase 2 opcional.</p></div></div>
+          </div>
+          <div class="flow-tools"><span>Node / Python</span><span>React u otra UI</span><span>PostgreSQL</span><span>Auth</span><span>APIs</span></div>
+          <p style="margin:1.1rem 0 0"><a class="btn btn-primary btn-sm" href="contacto.html?servicio=app">Solicitar app MVP</a></p>
+        </div>
+      </div>
+    </article>
+
+    <section>
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>¿No sabes por dónde empezar?</h2>
+            <p>La mayoría empieza con una auditoría de $50–$100 o una sola automatización de $300.</p>
+          </div>
+          <a class="btn btn-primary" href="contacto.html">Consulta gratis</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html" style="color:#fff;margin-bottom:0.85rem">
+          <div class="logo-mark">CL</div>
+          <span>Core Logic Solutions<small style="color:#8a9aab">LLC</small></span>
         </a>
-        <p>Llevamos tu empresa al siguiente nivel operacional integrando Inteligencia Artificial avanzada, automatización de tareas y desarrollo de software a medida.</p>
-        <div class="footer-socials">
-          <a href="#" class="social-icon" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="#" class="social-icon" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
-          <a href="#" class="social-icon" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
-          <a href="#" class="social-icon" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-        </div>
+        <p style="margin:0;max-width:28rem;color:#9aabbc">Servicios con flujos transparentes e imágenes reales de proyecto.</p>
       </div>
       <div>
-        <h3 class="footer-title">Enlaces</h3>
-        <ul class="footer-links">
-          <li><a href="index.html" class="footer-link">Inicio</a></li>
-          <li><a href="servicios.html" class="footer-link">Servicios</a></li>
-          <li><a href="nosotros.html" class="footer-link">Nosotros</a></li>
-          <li><a href="contacto.html" class="footer-link">Contacto</a></li>
+        <h4>Explorar</h4>
+        <ul>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proceso.html">Cómo trabajamos</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="footer-title">Servicios</h3>
-        <ul class="footer-links">
-          <li><a href="servicios.html" class="footer-link">Automatización de Tareas</a></li>
-          <li><a href="servicios.html" class="footer-link">Marketing Inteligente</a></li>
-          <li><a href="servicios.html" class="footer-link">Auditoría Competitiva</a></li>
-          <li><a href="servicios.html" class="footer-link">Desarrollo Web & Apps</a></li>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contact@corelogicsolutionsllc.com">contact@corelogicsolutionsllc.com</a></li>
         </ul>
-      </div>
-      <div class="footer-newsletter">
-        <h3 class="footer-title">Newsletter</h3>
-        <p>Suscríbete para recibir insights semanales sobre automatización e IA aplicada a negocios.</p>
-        <form class="newsletter-form" id="newsletter-form">
-          <input type="email" placeholder="Tu email corporativo" required id="newsletter-email">
-          <button type="submit" aria-label="Suscribirse">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-          </button>
-        </form>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Core Logic Solutions. Todos los derechos reservados.</p>
-      <p>Diseño y Tecnología con Inteligencia Artificial.</p>
+    <div class="container footer-bottom">
+      <span>© <span data-year></span> Core Logic Solutions LLC.</span>
+      <span>corelogicsolutionsllc.com</span>
     </div>
   </footer>
-
-  <!-- Chatbot Widget (Floating Assistant) -->
-  <div class="chatbot-widget" id="chatbot-widget-container">
-    <button class="chatbot-bubble" id="chatbot-trigger" aria-label="Abrir Asistente Virtual">
-      <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
-    </button>
-    <div class="chatbot-panel" id="chatbot-panel-card">
-      <div class="chatbot-header">
-        <div class="chatbot-profile">
-          <div class="chatbot-avatar">🤖</div>
-          <div class="chatbot-name">
-            <h4>CoreBot</h4>
-            <span class="chatbot-status">En línea</span>
-          </div>
-        </div>
-        <button class="chatbot-close" id="chatbot-close-btn" aria-label="Cerrar chat">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-      </div>
-      <div class="chatbot-messages" id="chatbot-messages-box"></div>
-      <div class="chatbot-suggestions">
-        <button class="suggestion-btn" data-key="services">Servicios</button>
-        <button class="suggestion-btn" data-key="automation">¿Cómo funciona la IA?</button>
-        <button class="suggestion-btn" data-key="audit">Simular Auditoría</button>
-        <button class="suggestion-btn" data-key="pricing">Presupuestos</button>
-        <button class="suggestion-btn" data-key="human">Hablar con Humano</button>
-      </div>
-      <div class="chatbot-input-area">
-        <input type="text" id="chat-input" placeholder="Pregunta algo sobre IA...">
-        <button id="chat-send" aria-label="Enviar mensaje">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
   <script src="js/main.js"></script>
   <script src="js/chatbot.js"></script>
-  <script src="js/auditor.js"></script>
-  <script src="js/calculator.js"></script>
 </body>
 </html>
